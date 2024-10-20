@@ -19,8 +19,6 @@ async function fetchJokes() {
             });
             const container = document.body.querySelector('.jokes');
             container.innerHTML = elements.join("");
-        } else {
-            throw new Error("Something went wrong");
         }
     } catch (error) {
         alert("Error occurred!");
